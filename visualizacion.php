@@ -12,6 +12,7 @@ $lugares = $conn->query("SELECT NOMBRE_LUGAR, CATEGORIA_ID, HORARIO_LUGAR FROM l
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos/visualizaciones.css" >
     <title>Visualización de Datos</title>
     <style>
         table {
