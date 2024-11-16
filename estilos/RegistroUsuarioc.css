@@ -1,0 +1,133 @@
+/* Importar una fuente elegante de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    background-image: url('Registroimg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f5f5f5;
+    position: relative;
+}
+
+/* Contenedor principal del formulario */
+form {
+    background-color: rgba(34, 34, 34, 0.9); /* Fondo oscuro semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 350px; /* Ancho máximo más pequeño */
+    text-align: center;
+    color: #f5f5f5;
+    margin: 20px;
+}
+
+/* Estilos para oscurecer el fondo */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Oscurece el fondo */
+    z-index: -1;
+}
+
+/* Encabezado del formulario */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #FFD700; /* Amarillo dorado */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+/* Estilos de etiquetas y campos de entrada */
+label {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: block;
+    color: #FFD700;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222; /* Fondo oscuro */
+    color: #FFD700;
+    font-size: 0.9em;
+    box-sizing: border-box;
+}
+
+/* Ajuste de los botones */
+form input[type="submit"],
+button {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+/* Colores específicos para cada botón */
+form input[type="submit"] {
+    background-color: #FFD700;
+    color: #222;
+}
+
+button {
+    background-color: #444;
+    color: #FFD700;
+}
+
+/* Botón para "Página principal" */
+form + form input[type="submit"] {
+    background-color: #555;
+    color: #FFD700;
+}
+
+input[type="submit"]:hover,
+button:hover,
+form + form input[type="submit"]:hover {
+    background-color: #FFC107; /* Cambia a un tono dorado más claro */
+}
+
+/* Ajuste de sombras y espaciado */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #FFD700;
+}
+
+h2, label, input, button {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+} 

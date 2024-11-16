@@ -1,0 +1,123 @@
+/* Importación de fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+
+/* Fondo de la página */
+body {
+    font-family: 'Lora', serif; /* Fuente personalizada */
+    background: linear-gradient(45deg, #ff9a00, #ff6a00); /* Fondo degradado naranja */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Apilar los elementos de manera vertical */
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Estirar los elementos dentro del formulario */
+    justify-content: center;
+    gap: 15px; /* Espacio entre los elementos */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* Centrado */
+    font-weight: 400; /* No negritas */
+}
+
+/* Estilo de los labels */
+label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: 400; /* No negritas */
+}
+
+/* Estilo de los inputs de texto y contraseña */
+input[type="email"], input[type="password"] {
+    width: 100%; /* Asegura que los inputs ocupen el 100% del contenedor */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-family: 'Lora', serif;
+}
+
+/* Efecto al hacer foco en los inputs */
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #ff6a00;
+    box-shadow: 0 0 8px rgba(255, 106, 0, 0.5);
+}
+
+/* Botón de iniciar sesión */
+input[type="submit"] {
+    background-color: #ff6a00; /* Color de fondo */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Lora', serif;
+}
+
+/* Efecto hover en el botón */
+input[type="submit"]:hover {
+    background-color: #ff7f33;
+    transform: scale(1.05);
+}
+
+/* Botón para el formulario de registro (dentro del mismo cuadro) */
+input[type="submit"].register {
+    background-color: #28a745;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Efecto hover en el botón de registrar */
+input[type="submit"].register:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Ajustes para los botones alineados */
+form {
+    display: flex;
+    flex-direction: column; /* Apilar verticalmente */
+    justify-content: flex-start; /* Alinear los elementos al principio */
+    align-items: center;
+}
+

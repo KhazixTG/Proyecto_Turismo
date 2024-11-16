@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e2e2e; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alineación al principio */
+    min-height: 100vh; /* Asegura que el body ocupe toda la pantalla */
+    text-align: center;
+    
+    /* Fondo temático con imagen */
+    background-image: url('Vistas.jpg'); /* Cambia la ruta a tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-attachment: scroll; /* Elimina el fondo fijo para evitar distorsiones */
+}
+
+/* Contenedor principal para las tablas */
+.container {
+    width: 100%;
+    padding: 20px;
+    overflow-x: auto; /* Permite hacer scroll horizontal si la tabla es muy ancha */
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Comienza invisible para la animación */
+    animation: fadeIn 2s forwards; /* Animación de aparición */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    color: #333;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botón de navegación */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Animación para la aparición de la tabla */
+.container h2 {
+    font-size: 2rem;
+    color: #ffcc00; /* Color dorado */
+    animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
